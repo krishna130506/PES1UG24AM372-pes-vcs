@@ -1,4 +1,6 @@
-// object.c — Content-addressable object store
+
+
+// Step 1: prepare header and compute hash// object.c — Content-addressable object store
 //
 // Every piece of data (file contents, directory listings, commits) is stored
 // as an "object" named by its SHA-256 hash. Objects are stored under
@@ -7,7 +9,7 @@
 //
 // PROVIDED functions: compute_hash, object_path, object_exists, hash_to_hex, hex_to_hash
 // TODO functions:     object_write, object_read
-
+// Step 1: preparing to implement object_write
 #include "pes.h"
 #include <stdio.h>
 #include <stdlib.h>
